@@ -8,4 +8,4 @@ DevineNumber est un mini-jeu consistant à deviner un nombre choisi aléatoireme
 
 Technologies utilisées : 
 
-HTML5, CSS3? JavaScript Vanilla
+HTML5, CSS3, JavaScript Vanilla
