@@ -1,6 +1,11 @@
-DevineNumber est un mini-projet pour mieux apprendre le JavaScript. 
+## DevineNumber 
+
+> Projet personnel pour apprendre JavaScript
+
+DevineNumber est un mini-jeu consistant à deviner un nombre choisi aléatoirement par l'ordinateur
+
+-----
 
 Technologies utilisées : 
-- HTML pour la structure
-- CSS pour la mise en page et le style
-- JavaScript pour l'interactivité
+
+HTML5, CSS3? JavaScript Vanilla
