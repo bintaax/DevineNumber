@@ -1,24 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Devine le nombre</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
-    <div class="container">
-        <h1>Devine le nombre</h1>
-        <p>Le but est simple. L'ordinateur choisit un nombre entre 1 et 100 et tu dois deviner :) <br>
-        Tu as droit à 5 essais</p>
 
-        <input type="number" id="guess"  placeholder="Ecris un nombre ici...">
-        <button id="valide">Valider</button>
-        <p id="message"></p>
-        <p id="essai">Essais : </p>
-        <button id="rejouer">Rejouer</button>
-    </div>
-    
-    <script src="./assets/js/script.js"></script>
+  <main class="app">
+    <section class="panel">
+      <div class="top">
+        <div class="chip">🎯 Mini-jeu</div>
+        <h1>Devine le nombre</h1>
+        <p class="subtitle">
+          L’ordinateur choisit un nombre entre <strong>1</strong> et <strong>100</strong>.
+          Tu as <strong>5 essais</strong>.
+        </p>
+      </div>
+
+      <div class="content">
+        <div class="field">
+          <label for="guess">Ta proposition</label>
+          <div class="controls">
+            <input type="number" id="guess" placeholder="Ex: 42" min="1" max="100" />
+            <button id="valide" type="button">Valider</button>
+          </div>
+        </div>
+
+        <div class="hud">
+          <p id="message" class="message">Entre un nombre pour commencer 👇</p>
+          <p id="essai" class="tries">Essais : </p>
+        </div>
+
+        <button id="rejouer" type="button" class="replay">Rejouer</button>
+      </div>
+
+      <div class="bottom">
+        <span>💡 Astuce : coupe l’intervalle en deux à chaque fois</span>
+      </div>
+    </section>
+  </main>
+
+  <script src="./assets/js/script.js"></script>
 </body>
 </html>
